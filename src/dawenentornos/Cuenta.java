@@ -1,8 +1,13 @@
-package bytebank;
+package dawenentornos;
 
 public class Cuenta {
 
     private double saldo;
+
+    public Cuenta(int agencia) {
+        this.agencia = agencia;
+    }
+
     private int agencia = 1;
     private int numero;
     private Cliente titular = new Cliente();
@@ -38,6 +43,16 @@ public class Cuenta {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "saldo=" + saldo +
+                ", agencia=" + agencia +
+                ", numero=" + numero +
+                ", titular=" + titular +
+                '}';
     }
 
     public double getSaldo() {
