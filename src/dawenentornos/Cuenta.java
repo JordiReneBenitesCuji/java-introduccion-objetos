@@ -1,5 +1,10 @@
 package dawenentornos;
 
+/**
+ * Descripción de la clase
+ * @author jordi
+ * @version 1.21
+ */
 public class Cuenta {
 
     private double saldo;
@@ -35,6 +40,12 @@ public class Cuenta {
         }
     }
 
+    /**
+     * Aquí iria la descripición del método...
+     * @param valor {double} sirve para lo que sea...
+     * @param destino {Cuenta} sirve para lo que sea...
+     * @return {boolean} devuelve si el valor dado por parámetro es mayor o igual que el saldo
+     */
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
